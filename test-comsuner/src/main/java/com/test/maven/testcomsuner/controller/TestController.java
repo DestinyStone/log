@@ -27,8 +27,8 @@ public class TestController {
 
     @GetMapping("/getImage")
     public String getImage() throws IOException, URISyntaxException {
-
-
+        System.out.println(333);
+        System.out.println(444);
         URL url = new URL("https://mall.qinlin.plus/wangniuLogo.png");
         BufferedImage read = ImageIO.read(url);
 
